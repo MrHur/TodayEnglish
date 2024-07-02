@@ -1,0 +1,148 @@
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  width: 95%;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #3f51b5;
+  font-size: 2.8em;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.word-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f8e9;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.word-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.word-card .english, .word-card .meaning {
+  font-size: 1.4em;
+  flex: 0 0 20%;
+  text-align: left;
+}
+
+.word-card .english {
+  color: #3f51b5;
+  font-weight: 500;
+}
+
+.word-card .meaning {
+  color: #4caf50;
+  font-weight: 400;
+}
+
+.word-card input {
+  flex: 0 0 20%;
+  padding: 10px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.word-card input:focus {
+  border-color: #3f51b5;
+  outline: none;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  flex: 0 0 35%;
+}
+
+button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.85em;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin: 0 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hide-english {
+  background-color: #ffcdd2;
+  color: #c62828;
+}
+
+.hide-meaning {
+  background-color: #e1bee7;
+  color: #6a1b9a;
+}
+
+.check-answer {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+}
+
+.delete-word {
+  background-color: #ffccbc;
+  color: #e64a19;
+}
+
+.hide-english:hover, .hide-meaning:hover, .check-answer:hover, .delete-word:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+footer {
+  margin-top: 30px;
+  color: #9e9e9e;
+  font-size: 1em;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#scoreContainer {
+  margin-top: 30px;
+  font-size: 1.8em;
+  color: #ff6f00;
+  font-weight: 300;
+}
+
+#fetchWords {
+  background-color: #bbdefb;
+  color: #1565c0;
+  font-size: 1em;
+  padding: 12px 25px;
+  margin-bottom: 20px;
+}
+
+#fetchWords:hover {
+  background-color: #90caf9;
+}
