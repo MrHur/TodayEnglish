@@ -22,6 +22,7 @@
 
 2024-07-04
          일본어 뜻으로 학습 할 수 있도록 수정했습니다.
+         
 ![image](https://github.com/MrHur/TodayEnglish/assets/79696786/88196c7b-c149-408f-856e-dffc2fa6784b)
 
 <br>
